@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+}
+h1 {
+    color: #47D44A;
+    font-family: 'matrix';
+    text-align: center;
+    font-size: 60px;
+}
+p {
+    color: #47D44A;
+    font-family: 'matrix';
+    font-size: 30px;
+    text-align: justify;
+}
+li{
+    color: #47D44A;
+    font-family: 'matrix';
+    font-size: 30px;
+}
+@font-face {
+    font-family: 'matrix';
+    src: url(./fontes/DejaVuSansMono.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
