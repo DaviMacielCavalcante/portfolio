@@ -22,7 +22,7 @@ li{
 }
 @font-face {
     font-family: 'matrix';
-    src: url(./fontes/DejaVuSansMono.ttf) format('truetype');
+    src: url(./fontes/CourierPrime-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
