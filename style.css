@@ -26,3 +26,12 @@ li{
     font-weight: normal;
     font-style: normal;
 }
+a {
+    text-decoration: solid;
+}
+a:visited { 
+    color: #47D44A;
+}
+a:hover {
+    color: blueviolet;
+}
