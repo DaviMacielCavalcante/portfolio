@@ -5,29 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Davi Cavalcante</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mq.css">
 </head>
 <body>
+    
     <header>
-        <h1>Hello, World!</h1>
-        <p>Meu nome é Davi Maciel Cavalcante. Sou um Java Back-end Developer, no momento cursando o nível superior em Análise e Desenvolvimento de Sistemas.</p>
+
+        <div>
+            <h1 id="hello">HELLO, WORLD!</h1>
+        </div>
+
+        <div id="apresentacao">
+            <p>Meu nome é Davi Maciel Cavalcante. Sou um Java Back-end Developer, no momento cursando o nível superior em Análise e Desenvolvimento de Sistemas.</p>
+        </div>
+
+        <div id="profil">
+            <picture>
+                <source media="(max-width: 768px)" srcset="imagens/p-teste.jpeg">
+                <source media="(max-width: 992px)" srcset="imagens/m-teste.jpeg">
+                <img src="imagens/EQWZLSKXYAArSAe.jpeg" alt="profile">
+            </picture>            
+        </div>
+
     </header>
+
+
+
     <main>
+
         <article>
+
             <h1>Meus Projetos:</h1>
-    <ul>
-        <li><a href="https://github.com/DaviMacielCavalcante/System_Hospital">Sistema para Clínica</a></li>
-        <li><a href="https://github.com/DaviMacielCavalcante/API-de-Filmes">APIs de Filmes</a> </li>
-        <li><a href="https://github.com/DaviMacielCavalcante/Pontos-de-interesse">Pontos de Interesse</a> </li>
-    </ul>
+
+            <ul>
+                <li><a href="https://github.com/DaviMacielCavalcante/System_Hospital">Sistema para Clínica</a></li>
+                <li><a href="https://github.com/DaviMacielCavalcante/API-de-Filmes">APIs de Filmes</a> </li>
+                <li><a href="https://github.com/DaviMacielCavalcante/Pontos-de-interesse">Pontos de Interesse</a> </li>
+            </ul>
+
         </article>
+
         <article>
+
             <h1>Meus Serviços:</h1>
-    <ul>
-        <li>Desenvolvimento de APIs, usando Java, seguindo padrão REST com Spring Boot</li>
-    </ul>
+
+            <ul>
+                <li>Desenvolvimento de APIs, usando Java, seguindo padrão REST com Spring Boot</li>
+            </ul>
+
         </article>
-        <article>
+
+        <article id="conhecimentos">
             <h1>Conhecimentos:</h1>
             <ul>
                 <li>Java</li>
@@ -40,6 +69,10 @@
                 <li>MongoDB</li>
             </ul> 
         </article>
-    </main>    
+    </main>
+    <!--
+        
+        
+    -->   
 </body>
 </html>

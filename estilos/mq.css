@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header {
+        position: relative;
+        height: 400px;
+    }
+
+    h1#hello {
+        position: absolute;
+        width: 400px;
+        height: 100px;
+        top: 85%;
+        left: 50%;
+    
+        font-size: 2em;
+        font-weight: lighter;    
+    }
+
+    div#apresentacao {
+        position: absolute;
+        top: 100%;  
+        right: 2%;
+        border-right: 2px dashed #47D44A;
+        border-bottom: 2px dashed #47D44A;
+        box-sizing: border-box;
+    
+        padding: 10px;
+        text-align: justify;
+        font-size: 1.3em;
+    }
+
+    div#profil img {
+        width: 250px;
+        height: 333px;
+        margin-top: 70px;
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
+
+    article {
+        display: block;
+        margin: 150px 50px 50px 20px;
+    }
+    
+    article > h1 {
+        color: #47D44A;
+        font-family: 'matrix';
+        text-align: center;
+        font-size: 2em;
+        padding-bottom: 10px;
+    }
+    
+    article li {
+        color: #47D44A;
+        font-family: 'matrix';
+        font-size: 1.3em;
+    }    
+}
+
+/* CONFIGURAÇÃO P/ TELAS GRANDES */
+
+@media screen and (min-width: 992px) {
+    header {
+        position: relative;
+        height: 400px;
+    }
+
+    h1#hello {
+        position: absolute;
+        width: 400px;
+        height: 100px;
+        top: 85%;
+        left: 75%;
+    
+        font-size: 3em;
+        font-weight: lighter;    
+    }
+
+    div#apresentacao {
+        width: 1000px;
+        position: absolute;
+        top: 100%;  
+        right: 2%;
+        border-right: 2px dashed #47D44A;
+        border-bottom: 2px dashed #47D44A;
+        box-sizing: border-box;
+    
+        padding: 10px;
+        text-align: justify;
+        font-size: 1.7em;
+    }
+
+    div#profil img {
+        width: 450px;
+        height: 600px;
+        margin-top: 70px;
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
+
+    article {
+        display: block;
+        margin: 320px 50px 0px 50px;
+    }
+    
+    article > h1 {
+        color: #47D44A;
+        font-family: 'matrix';
+        text-align: center;
+        font-size: 3em;
+        padding-bottom: 30px;
+
+        font-weight: lighter;
+    }
+    
+    article li {
+        color: #47D44A;
+        font-family: 'matrix';
+        font-size: 2em;
+    }    
+}
