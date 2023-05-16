@@ -14,7 +14,7 @@ const python = document.getElementById('python');
 document.addEventListener('DOMContentLoaded', () => {
     new TypeIt("#textoApresentacao", {
         speed: 90,
-        strings: "me chamo Davi, um quase poeta, apaixonado por inteligência artificial.",
+        strings: "me chamo Davi, um apaixonado por inteligência artificial.",
         cursor: false
     }).go();        
 });
@@ -49,17 +49,17 @@ elementosConhecimento.forEach(elemento => elemento.addEventListener('click', () 
 }));
 
 sistemaClinica.addEventListener('mouseover', () => {
-    sistemaClinica.firstElementChild.firstElementChild.innerText = `Essencialmente: um CRUD`
+    sistemaClinica.firstElementChild.firstElementChild.innerText = `Um CRUD`
 });
 
 sistemaClinica.addEventListener('mouseout', () => {    
     sistemaClinica.innerHTML = `<a href="https://github.com/DaviMacielCavalcante/System_Hospital" target="_blank" id="sistemaClinica">
-    <h3>Sistema para Clínicas</h3>
+    <h3>Sistema de Clínicas</h3>
 </a>`;
 });
 
 apiFilmes.addEventListener('mouseover', () => {
-    apiFilmes.firstElementChild.firstElementChild.innerText = `Apenas outro CRUD`
+    apiFilmes.firstElementChild.firstElementChild.innerText = `Outro CRUD`
 });
 
 apiFilmes.addEventListener('mouseout', () => {
