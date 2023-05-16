@@ -53,6 +53,11 @@ i {
     color: white;
 }
 
+.elementosConhecimento {
+    background-color: rgb(41, 100, 138);
+    color: white;
+}
+
 .containerProjetos {
     height: 180px;
     width: 300px;
