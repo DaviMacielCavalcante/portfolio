@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body { 
+    background-color: #25274D;
+}
+
+li {
+    list-style: none;
+}
+
+.corTextoBranco { 
+    color: white;
+}
+
+.corTextoAzulClaro {
+    color: #2E9CCA;
+}
+
+.flexContainer {
+    margin: 10px;
+    padding: 8px 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.elemetosProjetosIniciais {
+    background-color: #29648A;
+    color: white;
+}
+
+#foto {
+    border-radius: 50% 50%;
+}

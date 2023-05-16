@@ -5,74 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Davi Cavalcante</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/mq.css">
+    <link rel="stylesheet" href="./estilos/teste.css">
+    <!-- <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mq.css"> -->
 </head>
-<body>
+<body>    
     
-    <header>
-
+    <div class="corTextoBranco flexContainer" id="apresentacao">
         <div>
-            <h1 id="hello">HELLO, WORLD!</h1>
-        </div>
-
-        <div id="apresentacao">
-            <p>Meu nome é Davi Maciel Cavalcante. Sou um Java Back-end Developer, no momento cursando o nível superior em Análise e Desenvolvimento de Sistemas.</p>
-        </div>
-
-        <div id="profil">
             <picture>
-                <source media="(max-width: 768px)" srcset="imagens/p-teste.jpeg">
+                <source media="(max-width: 768px)" srcset="imagens/perfil-p.jpeg">
                 <source media="(max-width: 992px)" srcset="imagens/m-teste.jpeg">
-                <img src="imagens/EQWZLSKXYAArSAe.jpeg" alt="profile">
-            </picture>            
+                <img src="imagens/EQWZLSKXYAArSAe.jpeg" alt="profile" id="foto">
+            </picture>
         </div>
-
-    </header>
-
-
-
-    <main>
-
-        <article>
-
-            <h1>Meus Projetos:</h1>
-
+        <div>
+            <h1 class="corTextoAzulClaro">Olá,</h1>
+            <p>me chamo Davi, um quase poeta, apaixonado por inteligência artificial. </p>
+        </div>           
+    </div>
+    
+    <div class="corTextoBranco flexContainer" id="projetosIniciais">
+        <h1 class="co
+        corTextoAzulClaro">Minha jornada,</h1>
+        <p>começou com desenvolvimento de Sistemas com Java: </p>
+        <ul>
+            <li>
+                <div class="elemetosProjetosIniciais">
+                    <a href="https://github.com/DaviMacielCavalcante/System_Hospital">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="imagens/sistema-clinica-p.jpg">
+                            <img src="imagens/Copia-de-consultorio-medico-site-1170x730.jpg" alt="médica" id="">
+                        </picture>
+                    </a>                    
+                </div>
+                <h3>Sistema para Clínicas</h3>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- <main>
+        <h1>Comecei minha caminhada desenvolvendo sistemas. </h1>
+        <h1>Meus Projetos:</h1>
             <ul>
                 <li><a href="https://github.com/DaviMacielCavalcante/System_Hospital">Sistema para Clínica</a></li>
                 <li><a href="https://github.com/DaviMacielCavalcante/API-de-Filmes">APIs de Filmes</a> </li>
                 <li><a href="https://github.com/DaviMacielCavalcante/Pontos-de-interesse">Pontos de Interesse</a> </li>
             </ul>
-
-        </article>
-
-        <article>
-
-            <h1>Meus Serviços:</h1>
-
-            <ul>
-                <li>Desenvolvimento de APIs, usando Java, seguindo padrão REST com Spring Boot</li>
-            </ul>
-
-        </article>
-
-        <article id="conhecimentos">
-            <h1>Conhecimentos:</h1>
-            <ul>
-                <li>Java</li>
-                <li>Spring Boot</li>
-                <li>Git</li>
-                <li>Github</li>
-                <li>Linux</li>
-                <li>MySQL</li>
-                <li>PostgreSQL</li>
-                <li>MongoDB</li>
-            </ul> 
-        </article>
-    </main>
-    <!--
-        
-        
-    -->   
+            <h1>Agora vou em busca de outras coisas...</h1>
+    </main> -->
 </body>
 </html>
