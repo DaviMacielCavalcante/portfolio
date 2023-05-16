@@ -4,98 +4,60 @@
     margin: 0px;
     padding: 0px;
 }
-header {
-    position: relative;
-    height: 500px;
+
+body { 
+    background-color: #25274D;
 }
 
-body {
-    background-color: black;
-    margin: auto;
-    padding: 20px;
+li {
+    list-style: none;
 }
 
-h1#hello {
-    position: absolute;
-    width: 200px;
-    height: 100px;
-    top: 55%;
-    left: 22%;
-
-    font-size: 1.5em;
-    font-weight: lighter;    
-}
-
-div#apresentacao {
-    position: absolute;
-    top: 60%;  
-    right: 3%;
-    border-right: 2px dashed #47D44A;
-    border-bottom: 2px dashed #47D44A;
-    box-sizing: border-box;
-
-    padding: 10px;
-    text-align: justify;
-    font-size: 1em;
-}
-
-div#profil img {
-    width: 125px;
-    height: 167px;
-    margin-top: 70px;
-    border-radius: 50%;
-    box-sizing: border-box;
-}
-
-article {
-    display: block;
-    margin: 10px;
-    padding-bottom: 50px;
-}
-
-article > h1 {
-    color: #47D44A;
-    font-family: 'matrix';
-    text-align: center;
-    font-size: 1.5em;
-    padding-bottom: 10px;
-}
-
-article li {
-    color: #47D44A;
-    font-family: 'matrix';
-    font-size: 1.2em;
-}
-
-h1 {
-    color: #47D44A;
-    font-family: 'matrix';
-    text-align: center;
-    font-size: 60px;
-}
-p {
-    color: #47D44A;
-    font-family: 'matrix';
-    font-size: 1em;
-    text-align: justify;
-}
-li{
-    color: #47D44A;
-    font-family: 'matrix';
-    font-size: 30px;
-}
-@font-face {
-    font-family: 'matrix';
-    src: url(../fontes/CourierPrime-Regular.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 a {
-    text-decoration: solid;
+    text-decoration: none;
+    color: white;
 }
-a:visited { 
-    color: #47D44A;
+
+i {
+    font-size: 8em;
 }
-a:hover {
-    color: blueviolet;
+
+.corTextoBranco { 
+    color: white;
+}
+
+.corTextoAzulClaro {
+    color: #2E9CCA;
+}
+
+.flexContainer {
+    margin: 10px;
+    padding: 8px 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.littleFlexContainer {
+    margin: 5px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;  
+    align-items: center;  
+}
+
+.elementos {
+    background-color: rgb(41, 100, 138);
+    color: white;
+}
+
+.containerProjetos {
+    height: 180px;
+    width: 300px;
+}
+
+#foto {
+    border-radius: 50% 50%;
 }
