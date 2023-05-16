@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 1024px) {
+    i {
+        font-size: 8em;
+    }
+
+    div {
+        display: flex;
+    }
+
+    .flexContainer {
+        margin: 10px 5px;
+        padding: 8px 10px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .littleFlexContainer {
+        margin: 5px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;  
+        align-items: center;  
+    }
+
+    .containerProjetos {
+        height: 350px;
+        width: 400px;
+    }
+}

@@ -6,30 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Davi Cavalcante</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="./estilos/style.css">
-    <!-- <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/mq.css"> -->
+    <link rel="stylesheet" href="./estilos/mobile.css">
+    <link rel="stylesheet" href="./estilos/tablet.css">
+    <link rel="stylesheet" href="./estilos/desktop.css">
 </head>
 <body>        
-    <div class="corTextoBranco flexContainer" id="apresentacao">
+    <div class="corTextoBranco flexContainer">
         <div>
             <picture>
                 <source media="(max-width: 768px)" srcset="imagens/perfil-p.jpeg">
-                <source media="(max-width: 992px)" srcset="imagens/m-teste.jpeg">
-                <img src="imagens/EQWZLSKXYAArSAe.jpeg" alt="profile" id="foto">
+                <source media="(max-width: 1023px)" srcset="imagens/perfil-m.jpeg">
+                <img src="imagens/perfil-g.jpeg" alt="profile" id="foto">
             </picture>
         </div>
         <div>
-            <h1 class="corTextoAzulClaro" id="textoSaudacao">Olá,</h1>
+            <h1 class="corTextoAzulClaro">Olá,</h1>
             <p id="textoApresentacao"></p>
         </div>           
     </div>
     
-    <div class="corTextoBranco flexContainer" id="projetosIniciais">
-        <h1 class="co
-        corTextoAzulClaro">Minha jornada,</h1>
+    <div class="corTextoBranco flexContainer">
+        <h1 class="corTextoAzulClaro">Minha jornada,</h1>
         <p>começou com desenvolvimento de Sistemas com Java: </p>
-        <ul>
+        <ul class="flexContainer">
             <li class="littleFlexContainer">
                 <div class="elementos containerProjetos littleFlexContainer">
                     <a href="https://github.com/DaviMacielCavalcante/System_Hospital" target="_blank" id="sistemaClinica">
@@ -62,25 +61,26 @@
     </div>
 
     <div class="flexContainer corTextoAzulClaro">
-        <h2>O que aprendi até agora: </h2>
-        <p class="corTextoBranco">Clique no card para saber mais</p>
-        <div class="elementosConhecimento littleFlexContainer containerProjetos" id="java">            
-            <i class="devicon-java-plain"></i>          
-        </div>
-        <div class="elementosConhecimento littleFlexContainer containerProjetos" id="js">            
-            <i class="devicon-javascript-plain"></i>          
-        </div>
-        <div class="elementosConhecimento littleFlexContainer containerProjetos" id="html">            
-            <i class="devicon-html5-plain"></i>          
-        </div>
-        <div class="elementosConhecimento littleFlexContainer containerProjetos" id="css">            
-            <i class="devicon-css3-plain"></i>          
-        </div>
-        <div class="elementosConhecimento littleFlexContainer containerProjetos" id="spring">            
-            <i class="devicon-spring-plain"></i>          
-        </div>                 
-        <div class="elementosConhecimento littleFlexContainer containerProjetos" id="python">            
-            <i class="devicon-python-plain"></i>          
+        <h2>O que aprendi até agora (clique no íncones): </h2>
+        <div class="flexContainer">
+            <div class="elementosConhecimento littleFlexContainer containerProjetos" id="java">
+                <i class="devicon-java-plain"></i>
+            </div>
+            <div class="elementosConhecimento littleFlexContainer containerProjetos" id="js">
+                <i class="devicon-javascript-plain"></i>
+            </div>
+            <div class="elementosConhecimento littleFlexContainer containerProjetos" id="html">
+                <i class="devicon-html5-plain"></i>
+            </div>
+            <div class="elementosConhecimento littleFlexContainer containerProjetos" id="css">
+                <i class="devicon-css3-plain"></i>
+            </div>
+            <div class="elementosConhecimento littleFlexContainer containerProjetos" id="spring">
+                <i class="devicon-spring-plain"></i>
+            </div>
+            <div class="elementosConhecimento littleFlexContainer containerProjetos" id="python">
+                <i class="devicon-python-plain"></i>
+        </div>          
         </div>                 
     </div>
     <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>

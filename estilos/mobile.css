@@ -43,7 +43,7 @@ i {
 .littleFlexContainer {
     margin: 5px;
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     justify-content: center;  
     align-items: center;  
 }
@@ -60,7 +60,7 @@ i {
 
 .containerProjetos {
     height: 180px;
-    width: 300px;
+    width: 280px;
 }
 
 #foto {
