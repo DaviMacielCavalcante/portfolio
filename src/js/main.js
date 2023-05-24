@@ -19,6 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }).go();        
 });
 
+window.addEventListener('DOMContentLoaded', () => {
+    const token = localStorage.getItem('token');
+
+    if (!token) {
+        document.getElementById('novoProjeto').style.display = 'none';
+        document.getElementById('novoConhecimento').style.display = 'none';
+    }
+});
+
 elementos.forEach(elemento => elemento.addEventListener('mouseover', () => {
     elemento.style.backgroundColor = 'rgba(41, 99, 138, 0)'    
     elemento.style.border = '1px solid #2E9CCA'
