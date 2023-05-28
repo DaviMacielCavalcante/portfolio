@@ -30,6 +30,10 @@ i {
     color: #2E9CCA;
 }
 
+.deleteEdit {
+    font-size: 1.5em;
+}
+
 .flexContainer {
     margin: 10px;
     padding: 8px 20px;

@@ -28,38 +28,55 @@
     <div class="corTextoBranco flexContainer">
         <h1 class="corTextoAzulClaro">Minha jornada,</h1>
         <p>começou com desenvolvimento de Sistemas com Java: </p>
-        <ul class="flexContainer">
+        <ul class="flexContainer" id="listaProjetos">
             <li class="littleFlexContainer">
                 <div class="elementos containerProjetos littleFlexContainer">
                     <a href="https://github.com/DaviMacielCavalcante/System_Hospital" target="_blank" id="sistemaClinica">
                         <h3>Sistema de Clínicas</h3>
-                    </a>                
+                    </a>
+                    <i class="fa-sharp fa-solid fa-circle-xmark deleteEdit"></i> 
+                    <i class="fa-sharp fa-regular fa-pen-to-square deleteEdit"></i>              
                 </div>                
             </li>
             <li class="littleFlexContainer">
                 <div class="elementos containerProjetos littleFlexContainer">
                     <a href="https://github.com/DaviMacielCavalcante/API-de-Filmes" target="_blank" id="apiFilmes">
                         <h3>API de filmes</h3>
-                    </a>                
+                    </a>  
+                    <i class="fa-sharp fa-solid fa-circle-xmark deleteEdit"></i>  
+                    <i class="fa-sharp fa-regular fa-pen-to-square deleteEdit"></i>             
                 </div>                
             </li>
             <li class="littleFlexContainer">
                 <div class="elementos containerProjetos littleFlexContainer">
                     <a href="https://github.com/DaviMacielCavalcante/Pontos-de-interesse" target="_blank" id="pontosDeInteresse">
                         <h3>Pontos de Interesse</h3>
-                    </a>                
+                    </a>
+                    <i class="fa-sharp fa-solid fa-circle-xmark deleteEdit"></i>  
+                    <i class="fa-sharp fa-regular fa-pen-to-square deleteEdit"></i>               
                 </div>                
             </li>
             <li class="littleFlexContainer">
                 <div class="elementos containerProjetos littleFlexContainer">
                     <a href="https://github.com/DaviMacielCavalcante/dungeon-crawler" target="_blank" id="jogo">
                         <h3>Um jogo</h3>
-                    </a>                
+                    </a>
+                    <i class="fa-sharp fa-solid fa-circle-xmark deleteEdit"></i> 
+                    <i class="fa-sharp fa-regular fa-pen-to-square deleteEdit"></i>                
                 </div>                
             </li>
             <li class="littleFlexContainer">
                 <div class="elementos containerProjetos littleFlexContainer" id="novoProjeto">
                     <h3>+</h3>              
+                </div>           
+            </li>
+            <li class="littleFlexContainer">
+                <div class="elementos containerProjetos littleFlexContainer" id="adicionarProjeto">
+                    <form action="">
+                        <label for="nomeProjeto">Nome:</label>
+                        <input type="text" name="nomeProjeto" id="nomeProjeto">
+                        <input type="submit" value="Adicionar" id="projeto">                                        
+                    </form>             
                 </div>           
             </li>
         </ul>
@@ -85,14 +102,10 @@
             </div>
             <div class="elementosConhecimento littleFlexContainer containerProjetos" id="python">
                 <i class="devicon-python-plain"></i>
-            </div>     
-            <div class="littleFlexContainer" >
-                <div class="elementos containerProjetos littleFlexContainer" id="novoConhecimento">
-                    <h3>+</h3>              
-                </div>           
-            </div>     
+            </div>    
         </div>                 
     </div>
+    <script src="https://kit.fontawesome.com/d98e0e4dc9.js" crossorigin="anonymous"></script>
     <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <script src="C:\Users\Davi\node_modules\typeit\src"></script>
     <script src="../js/main.js"></script>

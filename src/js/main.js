@@ -10,6 +10,38 @@ const html = document.getElementById('html');
 const css = document.getElementById('css');
 const spring = document.getElementById('spring');
 const python = document.getElementById('python');
+const novoProjeto = document.getElementById('novoProjeto');
+const adicionarProjeto = document.getElementById('adicionarProjeto');
+const projeto = document.querySelector('#projeto');
+const listaProjetos = document.getElementById('listaProjetos');
+
+novoProjeto.addEventListener('click', () => {
+    adicionarProjeto.style.display = '';
+});
+
+projeto.addEventListener('click', (e) => {
+    e.preventDefault();
+    let h3 = document.createElement('h3');
+    let titulo = adicionarProjeto.querySelector('#nomeProjeto').value;
+    h3.textContent = titulo;
+    let tituloLink = document.createElement('a');
+    tituloLink.href = '#';
+    tituloLink.appendChild(h3)
+    let li = document.createElement('li');
+    let div = document.createElement('div');
+    li.className = 'littleFlexContainer';
+    div.className = 'elementos containerProjetos littleFlexContainer';
+    div.appendChild(tituloLink);
+    li.appendChild(div);
+    let icon1 = document.createElement('i');
+    let icon2 = document.createElement('i');
+    icon2.className = 'fa-sharp fa-regular fa-pen-to-square deleteEdit'
+    icon1.className = 'fa-sharp fa-solid fa-circle-xmark deleteEdit';
+    div.appendChild(icon1);
+    div.appendChild(icon2);
+    listaProjetos.appendChild(li);
+    adicionarProjeto.style.display = 'none';
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     new TypeIt("#textoApresentacao", {
@@ -24,7 +56,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     if (!token) {
         document.getElementById('novoProjeto').style.display = 'none';
-        document.getElementById('novoConhecimento').style.display = 'none';
+        document.getElementById('adicionarProjeto').style.display = 'none';
+    } else {
+        document.getElementById('adicionarProjeto').style.display = 'none';
     }
 });
 
@@ -78,7 +112,7 @@ apiFilmes.addEventListener('mouseout', () => {
 });
 
 pontosInteresse.addEventListener('mouseover', () => {
-    pontosInteresse.firstElementChild.firstElementChild.innerText = `Sistema de geolocalização`
+    pontosInteresse.firstElementChild.firstElementChild.innerText = `Sistema de Localização`
 });
 
 pontosInteresse.addEventListener('mouseout', () => {
