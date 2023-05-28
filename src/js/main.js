@@ -96,6 +96,12 @@ window.addEventListener('DOMContentLoaded', () => {
     if (!token) {
         document.getElementById('novoProjeto').style.display = 'none';
         document.getElementById('adicionarProjeto').style.display = 'none';
+        document.querySelectorAll('.fa-sharp.fa-regular.fa-pen-to-square.deleteEdit').forEach(e => {
+            e.style.display = 'none';
+        });
+        document.querySelectorAll('.fa-sharp.fa-solid.fa-circle-xmark.deleteEdit').forEach(e => {
+            e.style.display = 'none';
+        });
     } else {
         document.getElementById('adicionarProjeto').style.display = 'none';
     }
