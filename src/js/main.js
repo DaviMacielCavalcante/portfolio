@@ -37,9 +37,11 @@ editIcons.forEach(icon => {
         const input = document.createElement('input');
 
         input.type = 'text';
-        input.value = h3.textContent;
+        input.value = h3.textContent;        
 
         link.replaceChild(input, h3);
+
+        input.focus();
 
         input.addEventListener('keydown', (e) => {
             if (e.key === 'Enter') {
