@@ -22,12 +22,29 @@ i {
     font-size: 8em;
 }
 
+.btn {
+    width: 300px;
+    margin-top: 10px;
+    background-color: #25274D;
+    color: white;
+    box-shadow: none;
+    font-size: 1em;
+    font-weight: bolder;
+    border-color: #2E9CCA;
+    border-style: groove;
+}
+
 .corTextoBranco { 
     color: white;
 }
 
 .corTextoAzulClaro {
     color: #2E9CCA;
+}
+
+.containerProjetos {
+    height: 180px;
+    width: 280px;
 }
 
 .deleteEdit {
@@ -62,11 +79,13 @@ i {
     color: white;
 }
 
-.containerProjetos {
-    height: 180px;
-    width: 280px;
-}
+
 
 #foto {
     border-radius: 50% 50%;
+}
+
+#inputTexto, #inputSenha {
+    margin: 10px 20px;
+    width: 200px;
 }

@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autenticação</title>
     <link rel="stylesheet" href="../estilos/mobile.css">
+    <link rel="stylesheet" href="../estilos/tablet.css">
+    <link rel="stylesheet" href="../estilos/desktop.css">
 </head>
 <body>
-    <div>        
-        <form action="" class="flexContainer corTextoBranco" id="form">
+    <div id="divForm" class="flexContainer">        
+        <form action="" class="flexContainerLogin corTextoBranco" id="form">
             <label for="inputTexto">Login: </label>
             <input type="text" name="inputTexto" id="inputTexto">
+            <br>
             <label for="inputSenha">Senha: </label>
             <input type="password" name="inputSenha" id="inputSenha">
-            <button id="enviar">Login</button>
-            <button id="limpar">Limpar</button>
-            <button id="visitantes">Sou visitante!</button>
+            <button class="btn" id="enviar">Login</button>
+            <button class="btn" id="limpar">Limpar</button>
+            <button class="btn" id="visitantes">Sou visitante!</button>
         </form>
     </div>    
     <script src="../js/init.js"></script>
