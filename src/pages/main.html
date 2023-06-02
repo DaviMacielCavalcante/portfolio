@@ -25,11 +25,25 @@
         </div>           
     </div>
     
-    <div class="corTextoBranco flexContainer">
+    <div class="corTextoBranco flexContainer lista">
         <h1 class="corTextoAzulClaro">Minha jornada,</h1>
-        <p>começou com desenvolvimento de alguns projetos: </p>
+        <p>começou com desenvolvimento de alguns projetos (Você pode usar o menu ao lado para filtrar o que deseja ver): </p>  
+        <div id="menu">
+            <label>
+              <input type="radio" name="category" value="all" checked>
+              Todos
+            </label>
+            <label>
+              <input type="radio" name="category" value="api">
+              APIs
+            </label>
+            <label>
+              <input type="radio" name="category" value="jogo">
+              Jogos
+            </label>
+          </div>      
         <ul class="flexContainer" id="listaProjetos">
-            <li class="littleFlexContainer">
+            <li class="littleFlexContainer" data-category="api">
                 <div class="elementos containerProjetos littleFlexContainer">
                     <a href="https://github.com/DaviMacielCavalcante/System_Hospital" target="_blank" id="sistemaClinica">
                         <h3>Sistema de Clínicas</h3>
@@ -38,7 +52,7 @@
                     <i class="fa-sharp fa-regular fa-pen-to-square deleteEdit"></i>              
                 </div>                
             </li>
-            <li class="littleFlexContainer">
+            <li class="littleFlexContainer" data-category="api">
                 <div class="elementos containerProjetos littleFlexContainer">
                     <a href="https://github.com/DaviMacielCavalcante/API-de-Filmes" target="_blank" id="apiFilmes">
                         <h3>API de filmes</h3>
@@ -47,7 +61,7 @@
                     <i class="fa-sharp fa-regular fa-pen-to-square deleteEdit"></i>             
                 </div>                
             </li>
-            <li class="littleFlexContainer">
+            <li class="littleFlexContainer" data-category="api">
                 <div class="elementos containerProjetos littleFlexContainer">
                     <a href="https://github.com/DaviMacielCavalcante/Pontos-de-interesse" target="_blank" id="pontosDeInteresse">
                         <h3>Pontos de Interesse</h3>
@@ -56,7 +70,7 @@
                     <i class="fa-sharp fa-regular fa-pen-to-square deleteEdit"></i>               
                 </div>                
             </li>
-            <li class="littleFlexContainer">
+            <li class="littleFlexContainer" data-category="jogo">
                 <div class="elementos containerProjetos littleFlexContainer">
                     <a href="https://github.com/DaviMacielCavalcante/dungeon-crawler" target="_blank" id="jogo">
                         <h3>Um jogo</h3>

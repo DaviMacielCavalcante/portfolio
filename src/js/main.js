@@ -3,6 +3,7 @@ const apiFilmes = document.getElementById('apiFilmes');
 const pontosInteresse = document.getElementById('pontosDeInteresse');
 const jogo = document.getElementById('jogo');
 const elementos = document.querySelectorAll('.elementos');
+const elementosLista = document.querySelectorAll('.corTextoBranco.flexContainer.lista li');
 // Conhecimentos
 const elementosConhecimento = document.querySelectorAll('.elementosConhecimento');
 const java = document.getElementById('java');
@@ -29,6 +30,20 @@ deleteIcons.forEach(icon => {
     });    
 });
 
+// Menu de filtragem
+const menu = document.querySelectorAll('#menu input[type="radio"]');
+
+// FUNÇÕES E EVENTOS
+
+document.addEventListener('DOMContentLoaded', () => {
+    new TypeIt("#textoApresentacao", {
+        speed: 90,
+        strings: "me chamo Davi, um apaixonado por inteligência artificial.",
+        cursor: false
+    }).go();        
+});
+
+
 editIcons.forEach(icon => {
     icon.addEventListener('click', (e) => {
         const div = e.target.parentElement;
@@ -52,6 +67,23 @@ editIcons.forEach(icon => {
         });
 
     })
+});
+
+menu.forEach(btn => {
+    btn.addEventListener('change', (e) => {
+        const category = btn.value;
+
+        elementosLista.forEach(elementos => {
+            const categoriaElementos = elementos.getAttribute('data-category');
+            if (categoriaElementos === category) {
+                elementos.style.display = '';
+            } else if (category === 'all') {
+                elementos.style.display = '';
+            } else {
+                elementos.style.display = 'none';
+            }
+        })
+    });
 });
 
 novoProjeto.addEventListener('click', () => {
@@ -82,13 +114,6 @@ projeto.addEventListener('click', (e) => {
     adicionarProjeto.style.display = 'none';
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    new TypeIt("#textoApresentacao", {
-        speed: 90,
-        strings: "me chamo Davi, um apaixonado por inteligência artificial.",
-        cursor: false
-    }).go();        
-});
 
 window.addEventListener('DOMContentLoaded', () => {
     const token = localStorage.getItem('token');
